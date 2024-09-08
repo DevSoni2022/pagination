@@ -63,7 +63,7 @@ const ReactPagination = () => {
 
       {Array.from({ length: totalPage }, (_, i) => {
         return (
-          <button
+          <button className="btn"
             disabled={currentPage === i + 1 ? true : false}
             onClick={() => hanldePageChange(i + 1)}
             key={i}
@@ -73,7 +73,7 @@ const ReactPagination = () => {
         );
       })}
 
-      <button disabled={nextDisable} onClick={() => hanldeNextClick()}>
+      <button  disabled={nextDisable} onClick={() => hanldeNextClick()}>
         Next
       </button>
     </div>
